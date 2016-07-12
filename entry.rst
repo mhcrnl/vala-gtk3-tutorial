@@ -40,6 +40,16 @@ Text can be removed from the Entry via::
 
 The *start* and the *end* values indicate the range of characters to be removed.
 
+An EntryBuffer or :doc:`entrycompletion` widget can be defined after construction with the calls::
+
+  entry.set_buffer(entrybuffer);
+  entry.set_completion(entrycompletion);
+
+The EntryBuffer and EntryCompletion references in use can also be retrieved if required::
+
+  entry.get_buffer();
+  entry.get_completion();
+
 The Entry supports returning a string of characters from a requested range::
 
   entry.get_chars(start, end);
