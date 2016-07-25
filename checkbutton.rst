@@ -46,6 +46,12 @@ To retrieve whether a CheckButton is set as inconsistent use::
 
 If the CheckButton is in an inconsistent state, ``true`` will be returned.
 
+The indicator displaying the status can be omitted from view by setting::
+
+  checkbutton.set_mode(mode);
+
+When *mode* is set to ``false``, the CheckButton will display like a standard Button. Its use does not change the functionality of the CheckButton.
+
 =======
 Signals
 =======

@@ -58,6 +58,12 @@ To retrieve whether a RadioButton is set as inconsistent use::
 
 If the RadioButton is in an inconsistent state, ``true`` will be returned.
 
+The indicator displaying the status can be omitted from view by setting::
+
+  radiobutton.set_mode(mode);
+
+When *mode* is set to ``false``, the RadioButton will display like a standard Button. This mode may be used to create a button array similar to those used by the StackSwitcher. Its use does not change the functionality of the RadioButton.
+
 =======
 Signals
 =======
